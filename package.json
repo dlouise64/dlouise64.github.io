@@ -5,6 +5,9 @@
   "repository": "https://github.com/ServiceInnovationLab/serviceinnovationlab.github.io",
   "license": "MIT",
   "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "autoprefixer": "^9.6.0",
