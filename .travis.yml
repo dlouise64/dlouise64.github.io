@@ -7,7 +7,7 @@ install:
   - npm install
 
 script:
-  - gulp build
+  - gulp build_site
 
 before_deploy:
   - ls | grep -v _site | xargs rm -rf
