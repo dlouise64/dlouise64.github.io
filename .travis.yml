@@ -12,7 +12,6 @@ before_install:
   - rvm install 2.3.1
   - rvm use 2.3.1
   - gem install bundler
-
 deploy:
   provider: script
   script: "./_scripts/build.sh"
