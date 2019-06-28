@@ -88,4 +88,4 @@ function watch() {
 }
 
 gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch))
-gulp.task('build', gulp.parallel(jekyllBuild)
+gulp.task('build', gulp.parallel(jekyllBuild))
