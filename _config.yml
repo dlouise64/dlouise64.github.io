@@ -1,0 +1,33 @@
+# Site settings
+title: Service Innovation Lab
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  The Service Innovation Lab is a cross agency collaborative.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://serviceinnovationlab.github.io/" # the base hostname & protocol for your site
+twitter_username: SIL
+github_username:  serviceinnovationlab
+permalink: pretty
+# Build settings
+markdown: kramdown
+
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
+
+keep_files:
+  - _site/css
+  - _site/js
+
+include: ['_pages']
+
+collections:
+  authors:
+    output: true
+  projects:
+    output: true
+  tools:
+    output: true
+  team:
+    output: true
