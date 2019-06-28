@@ -27,7 +27,7 @@ var paths = {
 };
 
 function jekyllBuild() {
-  return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+  return cp.spawn( jekyll , ['build'], {stdio: 'inherit'}).on('error', function( err ){ throw err })
 }
 
 function style() {
