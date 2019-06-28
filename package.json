@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build_site"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
