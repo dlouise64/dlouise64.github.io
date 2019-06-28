@@ -27,7 +27,7 @@ var paths = {
 };
 
 function jekyllBuild() {
-  return cp.spawn( jekyll , ['build'], {stdio: 'inherit'}).on('error', function( err ){ throw err })
+  return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
 }
 
 function style() {
@@ -88,4 +88,4 @@ function watch() {
 }
 
 gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch))
-gulp.task('build_site', gulp.parallel(jekyllBuild))
+gulp.task('build_site', jekyllBuild)
