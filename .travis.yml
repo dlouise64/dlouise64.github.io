@@ -9,10 +9,10 @@ install:
 script:
   - npm run build
 
-  deploy:
-    provider: script
-    skip-cleanup: true
-    github-token: $GITHUB_TOKEN
-    local_dir: _site
-    on:
-      branch: master
+deploy:
+  provider: script
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: _site
+  on:
+    branch: master
