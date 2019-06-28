@@ -3,15 +3,12 @@
 # Enable error reporting to the console.
 set -e
 
-# Install bundles if needed.
-bundle check || bundle install
-
 # NPM install if needed.
 . $HOME/.nvm/nvm.sh && nvm install 6.1 && nvm use 6.1
 npm install
 
 # Build the site.
-gulp
+gulp build
 
 # Checkout `master` and remove everything.
 git clone https://${GH_TOKEN}@github.com/dlouise64/dlouise64.github.io.git ../dlouise64.github.io.master
