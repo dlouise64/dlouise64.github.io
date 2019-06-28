@@ -3,13 +3,19 @@ node_js:
   - 11.12.0
 cache: npm
 
-install:
-  - npm install
+branches:
+  except:
+  - master
 
+before_install:
+  - npm install
+  - rvm install 2.1
+  - rvm use 2.1
+  - gem install bundler
+  - bundle check || bundle install
 deploy:
   provider: script
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: _site
+  script: "./_scripts/build.sh"
+  skip_cleanup: false
   on:
-    branch: master
+    branch: dev
