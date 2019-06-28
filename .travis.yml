@@ -13,6 +13,6 @@ script:
     provider: script
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
-    local_dir: _sites
+    local_dir: _site
     on:
       branch: master
