@@ -6,9 +6,6 @@ cache: npm
 install:
   - npm install
 
-script:
-  - git checkout master
-
 deploy:
   provider: script
   skip-cleanup: true
